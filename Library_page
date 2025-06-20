@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리학원 │ 영어도서관 & 원서 독서 전문</title>
+  <!-- Google Fonts & Bootstrap (CDN, 모두 무료) -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TQ7oNvIvvivo9FN6hNoFH8BLx4IizQ9ZGjNipIY8VZGvqT60Fgh8+ZN2Fy88zt3O" crossorigin="anonymous">
+  <style>
+    body            {font-family: 'Noto Sans KR', sans-serif;}
+    .hero            {background:url('https://source.unsplash.com/1600x900/?library,books') center/cover no-repeat; height: 70vh; color:#fff; position:relative; display:flex; align-items:center;}
+    .overlay         {background:rgba(0,0,0,0.55); position:absolute; inset:0;}
+    .hero-content    {position:relative; z-index:1; max-width:650px; margin:0 auto; text-align:center; padding:0 1rem;}
+    .section-title   {font-weight:700; margin-bottom:1.25rem;}
+    .program-card img{height:170px; object-fit:cover;}
+    .teacher-img     {width:120px; height:120px; object-fit:cover; border-radius:50%;}
+    footer           {background:#222; color:#ddd; padding:2rem 0; font-size:0.9rem;}
+    footer a         {color:#ddd; text-decoration:none;}
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">우리학원</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#programs">프로그램</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teachers">강사진</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">수강 후기</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-primary text-white ms-lg-3" href="#contact">상담 신청</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 히어로 -->
+  <header id="hero" class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-5 fw-bold mb-3">Reading Lights the Future</h1>
+      <p class="lead mb-4">원서 독서 기반 몰입형 영어학습으로 사고력과 어학 실력을 동시에 키워보세요.</p>
+      <a href="#contact" class="btn btn-lg btn-warning fw-bold">무료 레벨테스트 신청 →</a>
+    </div>
+  </header>
+
+  <!-- 프로그램 섹션 -->
+  <section id="programs" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">주요 프로그램</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-lg-4">
+          <div class="card program-card h-100 shadow-sm">
+            <img src="https://source.unsplash.com/400x300/?kids,reading" class="card-img-top" alt="Phonics">
+            <div class="card-body">
+              <h5 class="card-title">Phonics Starter</h5>
+              <p class="card-text">5-7세 유아 대상 알파벳·파닉스 집중 과정으로 영어 자신감 기초 다지기.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card program-card h-100 shadow-sm">
+            <img src="https://source.unsplash.com/400x300/?students,library" class="card-img-top" alt="Reading Club">
+            <div class="card-body">
+              <h5 class="card-title">Reading Club</h5>
+              <p class="card-text">원서 정독과 토론 중심 수업으로 독해력·비판적 사고력 강화.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card program-card h-100 shadow-sm">
+            <img src="https://source.unsplash.com/400x300/?writing" class="card-img-top" alt="Writing & Presentation">
+            <div class="card-body">
+              <h5 class="card-title">Writing & Presentation</h5>
+              <p class="card-text">중·고급 레벨 대상 에세이 작성·발표 역량 집중 훈련.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 강사진 -->
+  <section id="teachers" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">전문 강사진</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Teacher 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="https://source.unsplash.com/200x200/?teacher" alt="Teacher" class="teacher-img mb-2 shadow-sm">
+          <h6 class="fw-bold mb-0">Emma Park</h6>
+          <small>영어교육</small>
+        </div>
+        <!-- Teacher 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="https://source.unsplash.com/200x200/?professor" alt="Teacher" class="teacher-img mb-2 shadow-sm">
+          <h6 class="fw-bold mb-0">David Kim</h6>
+          <small>TESOL 전문가, 10년 경력</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 후기 -->
+  <section id="reviews" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">수강 후기</h2>
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <blockquote class="blockquote border-start border-3 ps-3">
+            “읽기 능력이 눈에 띄게 향상되어 영어를 스스로 공부하는 습관이 생겼어요!”
+            <footer class="blockquote-footer mt-2">초4 이○○ 학부모</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote border-start border-3 ps-3">
+            “원서 토론 수업 덕분에 발표력이 크게 늘고 자신감이 붙었습니다.”
+            <footer class="blockquote-footer mt-2">중2 김○○ 학생</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 상담 신청 -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">상담 신청 & 문의</h2>
+      <p class="mb-3">전화 <a href="tel:053-123-4567" class="link-warning">053‑123‑4567</a> 또는 카카오톡 채널 <a href="https://pf.kakao.com/_xxx" target="_blank" class="link-warning">@우리학원</a></p>
+      <p class="mb-4">아래 구글폼을 통해 레벨테스트를 예약하세요.</p>
+      <!-- 예시 Google Form -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdummy/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 우리학원1. All rights reserved.</p>
+      <small>대구광역시 수성구  │ 사업자등록번호 123</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (for navbar toggling) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-p4q5q5iWB9kU9i6+GBnAXtkBcytgh/AHzKrRj7QqsU53Iu1T5beo7u2zqErmGP4v" crossorigin="anonymous"></script>
+</body>
+</html>
